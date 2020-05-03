@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    color: #ffffff;
+}
+
+.header {  
+    height: 100vh; 
+    background: hsl(257, 40%, 49%, 0.9); 
+    background-image: url(/Lumi-Frontendmentors/huddle-landing-page/images/bg-desktop.svg);
+    padding: 20px 100px;
+    /* margin: 0px auto; */
+}
+
+nav img {
+    width: 10em;
+    /* margin: 20px 0px */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 75vh;
+}
+
+.img-content {
+    max-width: 100%;
+    /* height: 80vh; */
+    /* border: 1px solid black; */
+    flex: 1.5;
+    /* margin: 40px auto; */
+}
+
+.img-content img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.side-content {
+    max-width: 100%;
+    /* border: 1px solid black; */
+    flex: 1;
+    padding: 30px;
+    align-self: center;
+    align-content: center;
+}
+
+.side-content h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    font-size: 2em;
+}
+
+.side-content p {
+    font-size: .8em;
+    margin: 20px 0px;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+button {
+    padding: 10px 50px;
+    font-weight: bold;
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 5px 7px 5px hsl(257, 40%, 49%); 
+}
+
+.social-icons {
+    /* background-color: black; */
+    /* border: 1px solid black; */
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons i {
+    margin: 15px 7px;
+}
+
+footer {
+    margin-top: -20px;
+    color: #fefefe;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 10px 15px;
+    }
+    nav {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px auto;
+        margin-top: 60px;
+        /* height: 75vh; */
+        /* border: 1px solid black; */
+    }
+
+    .img-content {
+        max-width: 80%;
+        /* height: 80vh; */
+        /* border: 1px solid black; */
+        flex: 1;
+        /* margin: 140px 0px; */
+    }
+
+    .side-content {
+        max-width: 100%;
+        text-align: center;
+        flex: 1;
+        padding: 30px;
+        
+    }
+
+    .side-content h1 {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.4em;
+        font-size: 1.5em;
+    }
+    
+    .side-content p {
+        font-size: .7em;
+        margin: 20px 0px;
+        line-height: 1.2em;
+        font-weight: 400;
+    }
+
+    .social-icons {
+        /* background-color: black; */
+        /* border: 1px solid black; */
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons i {
+        margin: 0px 7px;
+        /* padding: 7px; */
+    }
+    
+    footer {
+        margin-top: 10px;
+        color: black;
+    }
+}
